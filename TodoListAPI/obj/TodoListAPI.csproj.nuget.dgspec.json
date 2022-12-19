@@ -1,0 +1,118 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\Urvil\\projects\\2-call-api-b2c\\API\\TodoListAPI\\TodoListAPI.csproj": {}
+  },
+  "projects": {
+    "E:\\Urvil\\projects\\2-call-api-b2c\\API\\TodoListAPI\\TodoListAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Urvil\\projects\\2-call-api-b2c\\API\\TodoListAPI\\TodoListAPI.csproj",
+        "projectName": "TodoListAPI",
+        "projectPath": "E:\\Urvil\\projects\\2-call-api-b2c\\API\\TodoListAPI\\TodoListAPI.csproj",
+        "packagesPath": "C:\\Users\\UrvilKaswala\\.nuget\\packages\\",
+        "outputPath": "E:\\Urvil\\projects\\2-call-api-b2c\\API\\TodoListAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\UrvilKaswala\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.Graph": {
+              "target": "Package",
+              "version": "[4.49.0, )"
+            },
+            "Microsoft.Graph.Core": {
+              "target": "Package",
+              "version": "[2.0.14, )"
+            },
+            "Microsoft.Identity.Web": {
+              "target": "Package",
+              "version": "[1.25.1, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
