@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {
+    "net5.0": {
       "coverlet.collector/1.3.0": {
         "type": "package",
         "build": {
@@ -5993,7 +5993,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net6.0": [
+    "net5.0": [
       "Microsoft.Extensions.Configuration >= 3.1.17",
       "Microsoft.Extensions.Configuration.Json >= 3.1.17",
       "Microsoft.NET.Test.Sdk >= 16.7.1",
@@ -6008,26 +6008,26 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Urvil\\projects\\2-call-api-b2c\\API\\TodoListAPI.Tests\\TodoListAPI.Tests.csproj",
+      "projectUniqueName": "E:\\Urvil\\projects\\2-call-api-b2c\\Azure-B2C-Graph-API\\TodoListAPI.Tests\\TodoListAPI.Tests.csproj",
       "projectName": "TodoListAPI.Tests",
-      "projectPath": "E:\\Urvil\\projects\\2-call-api-b2c\\API\\TodoListAPI.Tests\\TodoListAPI.Tests.csproj",
+      "projectPath": "E:\\Urvil\\projects\\2-call-api-b2c\\Azure-B2C-Graph-API\\TodoListAPI.Tests\\TodoListAPI.Tests.csproj",
       "packagesPath": "C:\\Users\\UrvilKaswala\\.nuget\\packages\\",
-      "outputPath": "E:\\Urvil\\projects\\2-call-api-b2c\\API\\TodoListAPI.Tests\\obj\\",
+      "outputPath": "E:\\Urvil\\projects\\2-call-api-b2c\\Azure-B2C-Graph-API\\TodoListAPI.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\UrvilKaswala\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net6.0"
+        "net5.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net5.0": {
+          "targetAlias": "net5.0",
           "projectReferences": {}
         }
       },
@@ -6038,8 +6038,8 @@
       }
     },
     "frameworks": {
-      "net6.0": {
-        "targetAlias": "net6.0",
+      "net5.0": {
+        "targetAlias": "net5.0",
         "dependencies": {
           "Microsoft.Extensions.Configuration": {
             "target": "Package",

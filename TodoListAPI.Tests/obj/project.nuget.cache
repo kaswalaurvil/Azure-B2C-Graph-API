@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "o754ClNC8qVw5OMrFq6d91AzLgdY5Yh/y3cKCRsg2evv01mxEx3Lc2F1TGgd0RQK6GT6EuBV4GFd+Hi2MHHQmg==",
+  "dgSpecHash": "GiO7Rn0pUyu1uHM6UzPp2Ause/ofaBBJM+Bsoj3gSllbT/oOeTxsxa2BGPvuoqHHpECvdxUi8gx0QWFJrFHIKw==",
   "success": true,
-  "projectFilePath": "E:\\Urvil\\projects\\2-call-api-b2c\\API\\TodoListAPI.Tests\\TodoListAPI.Tests.csproj",
+  "projectFilePath": "E:\\Urvil\\projects\\2-call-api-b2c\\Azure-B2C-Graph-API\\TodoListAPI.Tests\\TodoListAPI.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\UrvilKaswala\\.nuget\\packages\\coverlet.collector\\1.3.0\\coverlet.collector.1.3.0.nupkg.sha512",
     "C:\\Users\\UrvilKaswala\\.nuget\\packages\\microsoft.codecoverage\\16.7.1\\microsoft.codecoverage.16.7.1.nupkg.sha512",
