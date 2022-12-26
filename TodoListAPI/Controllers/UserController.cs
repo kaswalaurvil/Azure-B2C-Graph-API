@@ -104,6 +104,50 @@ namespace TodoListAPI.Controllers
 
             return users;
         }
+        [HttpPost]
+        [Route("invite")]
+        //[RequiredScope(RequiredScopesConfigurationKey = "AzureAdB2C:Scopes:Write")]
+        public async Task<ActionResult<dynamic>> Invite(UserInvitation invitee)
+        {
+            string[] scopes = { "https://graph.microsoft.com/.default" };
+            ClientSecretCredential clientSecretCredential = new ClientSecretCredential(_configuration.GetValue<string>("AzureAdB2C:TenantId"), _configuration.GetValue<string>("AzureAdB2C:ClientId"), _configuration.GetValue<string>("AzureAdB2C:ClientSecret"));
+            GraphServiceClient graphClient = new GraphServiceClient(clientSecretCredential, scopes);
+
+            var user = new User
+            {
+                AccountEnabled = invitee.InvitedUser.accountEnabled,
+                DisplayName = invitee.InvitedUser.displayName,
+                MailNickname = invitee.InvitedUser.mailNickname,
+                UserPrincipalName = invitee.InvitedUser.userPrincipalName.Replace('@','_')+"Ext#@covrizeb2c.onmicrosoft.com",
+                GivenName = invitee.InvitedUser.givenName,
+                Surname = invitee.InvitedUser.surname,
+                UsageLocation = invitee.InvitedUser.usageLocation,
+                PasswordProfile = new PasswordProfile
+                {
+                    ForceChangePasswordNextSignIn = invitee.InvitedUser.passwordProfile.forceChangePasswordNextSignIn,
+                    Password = invitee.InvitedUser.passwordProfile.password,
+                }
+            };
+
+            var invitation = new Invitation
+            {
+                InvitedUserEmailAddress = invitee.InvitedUserEmailAddress,
+                InviteRedirectUrl = "https://account.activedirectory.windowsazure.com/?tenantid=acce8b0b-f2b9-4df5-b996-adc3424d0f40&login_hint="+ invitee.InvitedUserEmailAddress,
+                SendInvitationMessage= invitee.SendInvitationMessage,
+                InvitedUserDisplayName= invitee.InvitedUserDisplayName,
+                InvitedUserType=invitee.InvitedUserType,
+                InvitedUser= user,
+                Status= invitee.Status
+
+            };
+
+
+            var users = await graphClient.Invitations.Request().AddAsync(invitation);
+
+            return Ok(users);
+        }
+
+
 
         [HttpPatch]
         [Route("update")]
